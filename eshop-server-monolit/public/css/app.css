@@ -1,0 +1,820 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Manrope', serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#cart-count {
+    position: absolute;
+    width: 30px;
+    height: 37px;
+    margin-left: 5px;
+    /*top: 150px;*/
+}
+
+footer {
+    margin-top: auto;
+    color:#f0f9ff;
+}
+
+#main-header a {
+    margin-top: 5px;
+    margin-left: 15px;
+    text-decoration: none;
+    color: #000000;
+}
+
+#nav-icons i {
+    font-size: 1.1rem;
+    padding-left: 10px;
+    margin-right: 15px;
+}
+
+#navbarNav ul li {
+    font-size: 0.75rem;
+    font-weight: bold;
+    border-radius: .3rem;
+}
+
+#navbarNav ul li:hover {
+    background-color: #8c8886;
+}
+
+#navbarNav ul li button:hover {
+    color: #ffffff;
+}
+
+.jumbotron {
+    height: 60px;
+    cursor: default;
+    padding: 10px 5px;
+    margin: 0.5rem 0;
+    background-color: #e9ecef;
+    border-radius: .3rem;
+    font-size: 0.7rem;
+}
+
+.jumbotron:hover {
+    background-color: #ffbc37;
+    transition: 0.5s ease-in-out;
+}
+
+.jumbotron img {
+    width: 30px;
+    height: 30px;
+}
+
+.card-body {
+    background-color: #e9ecef;
+}
+
+.category {
+    text-transform: uppercase;
+}
+
+.card-title {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 0.7rem;
+}
+
+.product.card-body {
+    background-color: #ffffff;
+}
+
+.product.card-title {
+    font-size: 1.2rem;
+}
+
+.product.card-text {
+    font-size: 0.7rem;
+}
+
+.product.prop.card-body {
+    background-color: #e9ecef;
+    border-radius: 0.3rem;
+}
+
+.product.prop.card-title {
+    font-size: 0.7rem;
+}
+
+.product.prop.card-text {
+    font-size: 0.7rem;
+}
+
+.product.price.card-body {
+    background-color: #ffffff;
+}
+
+.product.price.card-title {
+    font-size: 1rem;
+}
+
+.product.btn {
+    border-radius: 0.5rem;
+    font-size: 0.7rem;
+}
+
+.product-specification-placeholder {
+    background-color: #e9ecef;
+    border-radius: 0.5rem;
+}
+
+.specifications-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.specifications h4 {
+    font-size: 1rem;
+}
+
+.specifications p {
+    font-size: 0.7rem;
+}
+
+.params-title {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.params-category {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.params-value {
+    font-size: 0.7rem;
+}
+
+.tech-parameters-placeholder {
+    background-color: #b8cce0;
+    border-radius: 0.5rem;
+}
+
+.shopping-cart .btn i {
+    font-size: 1.8rem;
+}
+
+.list-items-homepage .list-item {
+    margin-top: 15px;
+}
+
+.list-items .list-item {
+    margin-top: 30px;
+}
+
+.list-item {
+    text-decoration: none;
+    color: #000000;
+}
+
+.list-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
+    transition: 0.2s ease-in-out;
+}
+
+.header-holder:first-child {
+    margin-top: 30px;
+}
+
+.header-holder {
+    margin-top: 60px;
+}
+
+.price {
+    margin-top: 5px;
+    font-size: 1.3rem;
+}
+
+.pagination {
+    margin: 40px 0;
+}
+
+.top-bar-filter {
+    height: 50px;
+    padding-top: 10px;
+    background-color: #e9ecef;
+    border-radius: .3rem;
+}
+
+.auth-holder {
+    padding: 10px 0;
+    position: relative;
+}
+
+.auth-form {
+    padding: 30px;
+    border: 1px solid #969696;
+    border-radius: 4px;
+    background-color: #e9ecef;
+    box-shadow: 0 5px 5px #969696;
+}
+
+.auth-param {
+    margin-bottom: 10px;
+}
+
+.auth-btn {
+    width: 100%;
+    margin: 15px 0;
+    height: 50px;
+}
+
+.auth-form .outer-link {
+    display: block;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.auth-form .outer-link a {
+    text-decoration: none;
+}
+
+.modal-footer a {
+    text-decoration: none;
+}
+
+.footer {
+    padding: 10px;
+    color: #f0f9ff;
+}
+
+.footer ul {
+    padding: 0;
+    list-style: none;
+    line-height: 1.6;
+    font-size: 0.7rem;
+    margin-bottom: 0;
+}
+
+.footer ul a {
+    text-decoration: none;
+}
+
+.fa-github {
+    font-size: 3rem;
+    color: #ffffff;
+}
+
+#copyrights {
+    font-size: 0.7rem;
+}
+
+.sumarization {
+    background-color: #e9ecef;
+    border-radius: .5rem;
+}
+
+.progress-holder {
+    position: relative;
+}
+
+.progress-holder .progress {
+    height: 2px;
+    background-color: #5d5d5d;
+}
+
+#progress-bar-1 {
+    width: 0;
+}
+
+#progress-bar-2 {
+    width: 50%;
+}
+
+#progress-bar-3 {
+    width: 100%;
+}
+
+.progress-holder .btn {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+}
+
+.pic {
+    width: 60px;
+    height: 60px;
+}
+
+.table {
+    margin-top: 50px;
+}
+
+.table thead {
+    background-color: #939393;
+}
+
+.table thead th {
+    padding: 30px;
+    font-size: 1rem;
+    color: white;
+}
+
+.container .table-wrap {
+    margin: 20px auto;
+    overflow-x: auto;
+}
+
+.container .table-wrap::-webkit-scrollbar {
+    height: 5px;
+}
+
+.container .table-wrap::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #44a7d5;
+}
+
+.input {
+    width: 50px;
+    height: 30px;
+    color: black;
+    font-weight: 600;
+    outline: none;
+    padding: 8px;
+}
+
+.table tbody td {
+    padding: 20px;
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.table tbody td .fa-times {
+    color: #d72222;
+}
+
+.table tbody tr td:nth-of-type(3) {
+    min-width: 320px;
+}
+
+.table-small tbody tr td:nth-of-type(3) {
+    min-width: 100px;
+}
+
+.next-step ul {
+    list-style: none;
+}
+
+.next-step ul li span {
+    margin-left: 10px;
+}
+
+.next-step ul {
+    list-style: none;
+}
+
+.next-step ul li span {
+    margin-left: 10px;
+}
+
+.table-small i {
+    font-size: 1.4rem;
+}
+
+#order-final-holder {
+    margin-top: 15vh;
+    margin-bottom: 20vh;
+}
+
+#order-final-text {
+    padding: 20px;
+    font-size: 1rem;
+}
+
+.list-item .card-title {
+    margin-top: 15px;
+    font-size: 1rem;
+}
+
+/* small */
+@media (min-width: 576px) {
+    #main-header {
+        margin-top: 7px;
+        margin-left: 15px;
+    }
+
+    #nav-icons i {
+        font-size: 1.3rem;
+        padding-left: 10px;
+        margin-right: 20px;
+        margin-top: 2px;
+    }
+
+    #navbarNav ul li {
+        font-size: 0.9rem;
+    }
+
+    .jumbotron {
+        height: 60px;
+        padding: 10px 5px;
+        margin: 0.5rem 0;
+        font-size: 0.73rem;
+    }
+
+    .jumbotron img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .card-title {
+        font-size: 0.9rem;
+    }
+
+    .card-text {
+        font-size: 0.7rem;
+    }
+
+    .product.card-title {
+        font-size: 1.4rem;
+    }
+
+    .product.card-text {
+        font-size: 0.8rem;
+    }
+
+    .product.prop.card-title {
+        font-size: 0.8rem;
+    }
+
+    .product.prop.card-text {
+        font-size: 0.8rem;
+    }
+
+    .product.price.card-title {
+        font-size: 1.1rem;
+    }
+
+    .product.btn {
+        font-size: 0.8rem;
+    }
+
+    .specifications-title {
+        font-size: 1.4rem;
+    }
+
+    .specifications h4 {
+        font-size: 1.2rem;
+    }
+
+    .specifications p {
+        font-size: 0.8rem;
+    }
+
+    .params-title {
+        font-size: 1.2rem;
+    }
+
+    .params-category {
+        font-size: 1.0rem;
+    }
+
+    .params-value {
+        font-size: 0.8rem;
+    }
+
+    .auth-holder {
+        padding: 20px 0;
+    }
+
+    #order-final-text {
+        padding: 40px;
+        font-size: 1.5rem;
+    }
+}
+
+/* medium */
+@media (min-width: 768px) {
+    #main-header {
+        margin-top: 7px;
+        margin-left: 20px;
+    }
+
+    #nav-icons i {
+        font-size: 1.35rem;
+        padding-left: 15px;
+        margin-right: 25px;
+        margin-top: 2px;
+    }
+
+    #navbarNav ul li {
+        font-size: 1rem;
+    }
+
+    .jumbotron {
+        height: 70px;
+        padding: 10px 5px;
+        margin: 0.6rem 0;
+        font-size: 0.8rem;
+    }
+
+    .jumbotron img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .card-text {
+        font-size: 0.8rem;
+    }
+
+    .auth-holder {
+        padding: 30px 0;
+    }
+
+    #order-final-text {
+        padding: 60px;
+        font-size: 2rem;
+    }
+}
+
+/* large */
+@media (min-width: 992px) {
+    #main-header {
+        margin-top: 12px;
+        margin-left: 25px;
+    }
+
+    #nav-icons i {
+        font-size: 1.4rem;
+        padding-left: 15px;
+        margin-right: 30px;
+        margin-top: 9px;
+    }
+
+    #navbarNav ul li {
+        font-size: 1.05rem;
+    }
+
+    .jumbotron {
+        height: 75px;
+        padding: 10px 10px;
+        margin: 0.7rem 0;
+        font-size: 0.9rem;
+    }
+
+    .jumbotron img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .card-title {
+        font-size: 1.1rem;
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+    }
+
+    .product.card-title {
+        font-size: 1.6rem;
+    }
+
+    .product.card-text {
+        font-size: 0.9rem;
+    }
+
+    .product.prop.card-title {
+        font-size: 0.9rem;
+    }
+
+    .product.prop.card-text {
+        font-size: 0.9rem;
+    }
+
+    .product.btn {
+        font-size: 0.9rem;
+    }
+
+    .specifications-title {
+        font-size: 1.6rem;
+    }
+
+    .specifications h4 {
+        font-size: 1.4rem;
+    }
+
+    .specifications p {
+        font-size: 0.9rem;
+    }
+
+    .params-title {
+        font-size: 1.4rem;
+    }
+
+    .params-category {
+        font-size: 1.0rem;
+    }
+
+    .params-value {
+        font-size: 0.9rem;
+    }
+
+    .auth-holder {
+        padding: 40px 0;
+    }
+
+    #order-final-text {
+        padding: 60px;
+        font-size: 2.5rem;
+    }
+}
+
+/* extra large */
+@media (min-width: 1200px) {
+    #main-header {
+        margin-top: 10px;
+        margin-left: 30px;
+    }
+
+    #nav-icons i {
+        font-size: 1.5rem;
+        padding-left: 15px;
+        margin-right: 35px;
+        margin-top: 8px;
+    }
+
+    #navbarNav ul li {
+        font-size: 1.1rem;
+    }
+
+    .jumbotron {
+        height: 85px;
+        padding: 10px 15px;
+        margin: 0.8rem 0;
+        font-size: 1rem;
+    }
+
+    .jumbotron img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .card-title {
+        font-size: 1.2rem;
+    }
+
+    .card-text {
+        font-size: 1rem;
+    }
+
+    .product.card-title {
+        font-size: 1.9rem;
+    }
+
+    .product.card-text {
+        font-size: 1rem;
+    }
+
+    .product.prop.card-title {
+        font-size: 1rem;
+    }
+
+    .product.prop.card-text {
+        font-size: 1rem;
+    }
+
+    .product.price.card-title {
+        font-size: 1.4rem;
+    }
+
+    .product.btn {
+        font-size: 1rem;
+    }
+
+    .specifications-title {
+        font-size: 1.7rem;
+    }
+
+    .specifications h4 {
+        font-size: 1.4rem;
+    }
+
+    .specifications p {
+        font-size: 1rem;
+    }
+
+    .params-title {
+        font-size: 1.4rem;
+    }
+
+    .params-category {
+        font-size: 1.1rem;
+    }
+
+    .params-value {
+        font-size: 0.9rem;
+    }
+
+    .auth-holder {
+        padding: 50px 0;
+    }
+
+    #order-final-text {
+        padding: 80px;
+        font-size: 2.7rem;
+    }
+}
+
+/* extra extra large */
+@media (min-width: 1400px) {
+    #main-header {
+        margin-top: 10px;
+        margin-left: 35px;
+    }
+
+    #nav-icons i {
+        font-size: 1.6rem;
+        padding-left: 15px;
+        margin-right: 35px;
+        margin-top: 7px;
+    }
+
+    /*//TODO dorobit*/
+    #nav-icons span {
+        font-size: 1rem;
+    }
+
+    #navbarNav ul li {
+        font-size: 1.2rem;
+    }
+
+    .jumbotron {
+        height: 90px;
+        padding: 10px 20px;
+        margin: 1rem 0;
+        font-size: 1.1em;
+    }
+
+    .jumbotron img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .card-title {
+        font-size: 1.3rem;
+    }
+
+    .card-text {
+        font-size: 1.1rem;
+    }
+
+    .product.card-title {
+        font-size: 2rem;
+    }
+
+    .product.price.card-title {
+        font-size: 1.6rem;
+    }
+
+    .specifications-title {
+        font-size: 2rem;
+    }
+
+    .specifications h4 {
+        font-size: 1.7rem;
+    }
+
+    .specifications p {
+        font-size: 1rem;
+    }
+
+    .params-title {
+        font-size: 1.5rem;
+    }
+
+    .params-category {
+        font-size: 1.2rem;
+    }
+
+    .params-value {
+        font-size: 1rem;
+    }
+
+    .auth-holder {
+        padding: 60px 0;
+    }
+
+    #order-final-text {
+        padding: 100px;
+        font-size: 3rem;
+    }
+}
